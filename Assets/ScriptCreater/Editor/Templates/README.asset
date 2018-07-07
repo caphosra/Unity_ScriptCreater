@@ -15,6 +15,7 @@ MonoBehaviour:
   canEditDefaultPath: 0
   replaceWords:
   - '[ProjectName]'
+  - '[Description]'
   text: '# [ProjectName]
 
-    This project is very good !'
+    [Description]'

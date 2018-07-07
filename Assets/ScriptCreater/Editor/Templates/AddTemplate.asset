@@ -11,16 +11,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65bdb9825edce1c4d96aeaa585b5f80b, type: 3}
   m_Name: AddTemplate
   m_EditorClassIdentifier: 
-  defaultPath: Assets/Editor/AddAssetMenu.cs
+  defaultPath: Assets/Editor/addAssetMenu.cs
   canEditDefaultPath: 1
   replaceWords:
   - '[MenuName]'
   - '[Path]'
-  text: '#if UNITY_EDITOR
-
-
-    using UnityEditor;
-
-
-
-    #endif'
+  text: "#if UNITY_EDITOR\n\nusing UnityEditor;\n\npublic partial class AddAssetMenuClass
+    : Editor\r\n{\r\n    [MenuItem(\"[MenuName]\")]\r\n    static void CreateMenu()\r\n
+    \   {\r\n        ScriptCreater.Show(\"[Path]\");\n    }\r\n}\n\n#endif"

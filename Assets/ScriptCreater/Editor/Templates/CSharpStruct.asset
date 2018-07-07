@@ -11,7 +11,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65bdb9825edce1c4d96aeaa585b5f80b, type: 3}
   m_Name: CSharpStruct
   m_EditorClassIdentifier: 
-  defaultPath: 
-  canEditDefaultPath: 0
+  defaultPath: Assets/script.cs
+  canEditDefaultPath: 1
   replaceWords: []
-  text: 
+  text: "using System;\nusing System.Collections;\r\nusing System.Collections.Generic;\r\nusing
+    UnityEngine;\r\n\npublic struct [FileName]\r\n{\r\n\r\n}"
